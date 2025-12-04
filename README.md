@@ -578,5 +578,14 @@ pip install fasttext pandas numpy==1.26.4 huggingface_hub
 python ~/src/ssu/analysis/ae2_language_ratio_analyze.py
 ```
 
+## Adapted Models
+The adapted model checkpoints will be made publicly available on the Hugging Face Hub soon.
+
+## Citation
+If you find our work useful in your research, please consider citing the following paper:
+```
+TBA
+```
+
 ## License
 This repository is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
