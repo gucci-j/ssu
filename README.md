@@ -584,7 +584,15 @@ The adapted model checkpoints will be made publicly available on the Hugging Fac
 ## Citation
 If you find our work useful in your research, please consider citing the following paper:
 ```
-TBA
+@misc{yamaguchi2025mitigatingcatastrophicforgettingtarget,
+      title={Mitigating Catastrophic Forgetting in Target Language Adaptation of LLMs via Source-Shielded Updates}, 
+      author={Atsuki Yamaguchi and Terufumi Morishita and Aline Villavicencio and Nikolaos Aletras},
+      year={2025},
+      eprint={2512.04844},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2512.04844}, 
+}
 ```
 
 ## License
