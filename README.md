@@ -579,7 +579,67 @@ python ~/src/ssu/analysis/ae2_language_ratio_analyze.py
 ```
 
 ## Adapted Models
-The adapted model checkpoints will be made publicly available on the Hugging Face Hub soon.
+The adapted model checkpoints are available at the following Hugging Face Hub repositories:
+
+| Approach | Model Size | Hugging Face Hub Repository |
+|----------|------------|-----------------------------|
+| FFT      | 7B         | [ne](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ne-fft) / [am](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-am-fft) / [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-fft) / [ha](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ha-fft) / [ky](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ky-fft) |
+| FFT      | 13B        | [ne](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ne-fft) / [am](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-am-fft) / [ig](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ig-fft) / [ha](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ha-fft) / [ky](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ky-fft) |
+| HFT      | 7B         | [ne](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ne-hft) / [am](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-am-hft) / [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-hft) / [ha](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ha-hft) / [ky](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ky-hft) |
+| HFT      | 13B        | [ne](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ne-hft) / [am](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-am-hft) / [ig](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ig-hft) / [ha](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ha-hft) / [ky](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ky-hft) |
+| GMT      | 7B         | [ne](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ne-gmt) / [am](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-am-gmt) / [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-gmt) / [ha](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ha-gmt) / [ky](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ky-gmt) |
+| GMT      | 13B        | [ne](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ne-gmt) / [am](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-am-gmt) / [ig](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ig-gmt) / [ha](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ha-gmt) / [ky](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ky-gmt) |
+| SSU-Wanda | 7B       | [ne](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ne-ssu) / [am](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-am-ssu) / [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu) / [ha](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ha-ssu) / [ky](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ky-ssu) |
+| SSU-Wanda | 13B      | [ne](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ne-ssu) / [am](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-am-ssu) / [ig](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ig-ssu) / [ha](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ha-ssu) / [ky](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ky-ssu) |
+| AdaLoRA  | 7B         | [ne](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ne-adalora) / [am](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-am-adalora) / [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-adalora) / [ha](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ha-adalora) / [ky](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ky-adalora) |
+| AdaLoRA  | 13B        | [ne](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ne-adalora) / [am](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-am-adalora) / [ig](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ig-adalora) / [ha](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ha-adalora) / [ky](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ky-adalora) |
+| SSU-Rand | 7B      | [ne](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ne-random) / [am](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-am-random) / [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-random) / [ha](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ha-random) / [ky](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ky-random) |
+| SSU-Rand | 13B     | [ne](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ne-random) / [am](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-am-random) / [ig](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ig-random) / [ha](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ha-random) / [ky](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ky-random) |
+| SSU-Mag | 7B       | [ne](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ne-magnitude) / [am](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-am-magnitude) / [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-magnitude) / [ha](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ha-magnitude) / [ky](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ky-magnitude) |
+| SSU-Mag | 13B      | [ne](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ne-magnitude) / [am](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-am-magnitude) / [ig](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ig-magnitude) / [ha](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ha-magnitude) / [ky](https://huggingface.co/ssu-project/OLMo-2-1124-13B-Instruct-ky-magnitude) |
+
+
+**Ablation model checkpoints** used in the paper are also available at the following Hugging Face Hub repositories:
+| Approach | Model Size | Hugging Face Hub Repository |
+|----------|------------|-----------------------------|
+| SSU-Wanda (Alpaca) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu_alpaca) |
+| SSU-Wanda (SparseGPT) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu_sgpt) |
+| SSU-Wanda (Fisher) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu_fisher) |
+| SSU-Wanda (12.5% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu_0.125) |
+| SSU-Wanda (25% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu_0.25) |
+| SSU-Wanda (37.5% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu_0.375) |
+| SSU-Wanda (62.5% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu_0.625) |
+| SSU-Wanda (75% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu_0.75) |
+| SSU-Wanda (87.5% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu_0.875) |
+| SSU-Wanda (Row-wise) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu_rw) |
+| SSU-Wanda (Element-wise) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu_ew) |
+| SSU-Wanda (Calibration Data Size: 128) | 7B | N/A |
+| HFT (12.5% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-hft_0.125) |
+| HFT (25% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-hft_0.25) | |
+| HFT (37.5% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-hft_0.375) |
+| HFT (62.5% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-hft_0.625) |
+| HFT (75% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-hft_0.75) |
+| HFT (87.5% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-hft_0.875) |
+| GMT (12.5% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-gmt_0.125) |
+| GMT (25% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-gmt_0.25) |
+| GMT (37.5% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-gmt_0.375) |
+| GMT (62.5% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-gmt_0.625) |
+| GMT (75% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-gmt_0.75) |
+| GMT (87.5% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-gmt_0.875) |
+| LoTA (90% Sparsity) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-lota) |
+| LoTA (12.5% Sparsity) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-lota_0.125) | |
+| LoTA (25% Sparsity) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-lota_0.25) |
+| LoTA (37.5% Sparsity) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-lota_0.375) |
+| LoTA (50% Sparsity) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-lota_0.5) |
+| LoTA (62.5% Sparsity) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-lota_0.625) |
+| LoTA (75% Sparsity) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-lota_0.75) |
+| LoTA (87.5% Sparsity) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-lota_0.875) |
+| S2FT (Down) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-s2ft_d) |
+| S2FT (Down & Output) | 7B | N/A |
+| S2FT (Down, rank=16) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-s2ft_d_16) |
+| S2FT (Down, rank=32) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-s2ft_d_32) |
+| S2FT (Down, rank=64) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-s2ft_d_64) |
+
 
 ## Citation
 If you find our work useful in your research, please consider citing the following paper:
