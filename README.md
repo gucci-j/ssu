@@ -603,8 +603,8 @@ The adapted model checkpoints are available at the following Hugging Face Hub re
 | Approach | Model Size | Hugging Face Hub Repository |
 |----------|------------|-----------------------------|
 | SSU-Wanda (Alpaca) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu_alpaca) |
-| SSU-Wanda (SparseGPT) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu_sgpt) |
-| SSU-Wanda (Fisher) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu_fisher) |
+| SSU-SparseGPT | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu_sgpt) |
+| SSU-Fisher | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu_fisher) |
 | SSU-Wanda (12.5% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu_0.125) |
 | SSU-Wanda (25% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu_0.25) |
 | SSU-Wanda (37.5% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu_0.375) |
