@@ -613,7 +613,7 @@ The adapted model checkpoints are available at the following Hugging Face Hub re
 | SSU-Wanda (87.5% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu_0.875) |
 | SSU-Wanda (Row-wise) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu_rw) |
 | SSU-Wanda (Element-wise) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu_ew) |
-| SSU-Wanda (Calibration Data Size: 128) | 7B | N/A |
+| SSU-Wanda (Calibration Data Size: 128) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu_128) |
 | HFT (12.5% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-hft_0.125) |
 | HFT (25% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-hft_0.25) | |
 | HFT (37.5% Freezing Ratio) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-hft_0.375) |
@@ -635,7 +635,7 @@ The adapted model checkpoints are available at the following Hugging Face Hub re
 | LoTA (75% Sparsity) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-lota_0.75) |
 | LoTA (87.5% Sparsity) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-lota_0.875) |
 | S2FT (Down) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-s2ft_d) |
-| S2FT (Down & Output) | 7B | N/A |
+| S2FT (Down & Output) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-s2ft_do) |
 | S2FT (Down, rank=16) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-s2ft_d_16) |
 | S2FT (Down, rank=32) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-s2ft_d_32) |
 | S2FT (Down, rank=64) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-s2ft_d_64) |
