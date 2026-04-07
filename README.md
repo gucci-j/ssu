@@ -8,8 +8,8 @@ This is the official repository for the ACL 2026 paper "Mitigating Catastrophic 
 </div>
 
 
-> [!NOTE] Throughout the repository, you will find the following placeholders:  
->
+> [!NOTE]
+> Throughout the repository, you will find the following placeholders:
 > * `your-hf-id`: Your Hugging Face ID to create and push datasets.
 > * `/path/to/containers/`: A directory to store downloaded container images.
 > * `/path/to/cache/`: A directory to store cache files.
