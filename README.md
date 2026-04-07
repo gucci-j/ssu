@@ -1,32 +1,29 @@
 Mitigating Catastrophic Forgetting in Target Language Adaptation of LLMs via Source-Shielded Updates
 ===
 
-This is the official repository for the paper "Mitigating Catastrophic Forgetting in Target Language Adaptation of LLMs via Source-Shielded Updates". We provide code and step-by-step instructions for reproducing our experiments.
+This is the official repository for the ACL 2026 paper "Mitigating Catastrophic Forgetting in Target Language Adaptation of LLMs via Source-Shielded Updates". We provide code and step-by-step instructions for reproducing our experiments.
 
 <div style="text-align: center;">
     <img src="overview.png" alt="Overview" width="300" />
 </div>
 
-
----
-
-**NOTE**: Throughout the repository, you will find the following placeholders:
-
-* `your-hf-id`: Your Hugging Face ID to create and push datasets.
-* `/path/to/containers/`: A directory to store downloaded container images.
-* `/path/to/cache/`: A directory to store cache files.
-* `/path/to/envs/`: A directory to create virtual environments.
-* `/path/to/processed/data`: A directory to store processed data.
-* `/path/to/models/`: A directory to store model checkpoints.
-* `/path/to/logs/`: A directory to store logs for training.
-* `/path/to/mnt`: A directory to bind-mount your data directory if needed.
-* `your_openai_api_key`: Your OpenAI API key.
-
-Please replace these placeholders with the actual paths relevant to your environment.
-
-Also, please make sure to log in to the Hugging Face Hub using `huggingface-cli login` before running any scripts that require access to the Hugging Face Hub.
-
-We do not expect you to modify any code other than the placeholders to reproduce our results.
+> [!Note] Throughout the repository, you will find the following placeholders:
+>
+> * `your-hf-id`: Your Hugging Face ID to create and push datasets.
+> * `/path/to/containers/`: A directory to store downloaded container images.
+> * `/path/to/cache/`: A directory to store cache files.
+> * `/path/to/envs/`: A directory to create virtual environments.
+> * `/path/to/processed/data`: A directory to store processed data.
+> * `/path/to/models/`: A directory to store model checkpoints.
+> * `/path/to/logs/`: A directory to store logs for training.
+> * `/path/to/mnt`: A directory to bind-mount your data directory if needed.
+> * `your_openai_api_key`: Your OpenAI API key.
+>
+> Please replace these placeholders with the actual paths relevant to your environment.
+>
+> Also, please make sure to log in to the Hugging Face Hub using `huggingface-cli login` before running any scripts that require access to the Hugging Face Hub.
+>
+> We do not expect you to modify any code other than the placeholders to reproduce our results.
 
 
 ## Installation
@@ -448,46 +445,49 @@ Here are example job scripts for each training strategy.
 
 #### OLMo-2-7B-1124-Instruct
 
-* [FFT](./training/scripts/fft.sh)
-* [AdaLoRA](./training/scripts/adalora.sh)
-* [HFT](./training/scripts/hft.sh)
-* [GMT](./training/scripts/gmt.sh)
-* [SSU-Rand](./training/scripts/random.sh)
-* [SSU-Mag](./training/scripts/magnitude.sh)
-* [SSU-Wanda](./training/scripts/ssu.sh)
+| Strategy | Script |
+|----------|--------|
+| FFT | [fft.sh](./training/scripts/fft.sh) |
+| AdaLoRA | [adalora.sh](./training/scripts/adalora.sh) |
+| HFT | [hft.sh](./training/scripts/hft.sh) |
+| GMT | [gmt.sh](./training/scripts/gmt.sh) |
+| SSU-Rand | [random.sh](./training/scripts/random.sh) |
+| SSU-Mag | [magnitude.sh](./training/scripts/magnitude.sh) |
+| SSU-Wanda | [ssu.sh](./training/scripts/ssu.sh) |
 
 ##### For ablation analysis
-* [Freezing ratio](./training/scripts/ssu_ratio.sh)
-* Freezing ratio analysis on baselines
-  * [HFT](./training/scripts/hft_ratio.sh)
-  * [GMT](./training/scripts/gmt_ratio.sh)
-* Freezing methods
-  * [Row-wise](./training/scripts/ssu_rw.sh)
-  * [Element-wise](./training/scripts/ssu_ew.sh)
-* [Calibration data (Alpaca)](./training/scripts/ssu_alpaca.sh)
-* [Calibration data size](./training/scripts/ssu_128.sh)
-* Different importance scoring methods
-  * [SparseGPT](./training/scripts/ssu_sgpt.sh)
-  * [Fisher](./training/scripts/ssu_fisher.sh)
-* Additional baselines
-  * [LoTA (90\% Sparsity)](./training/scripts/lota.sh)  
-  * [LoTA (50\% Sparsity)](./training/scripts/lota_ratio.sh) (Please provide 0.5 as the second argument when running the script.)
-  * [LoTA (Sparsity ablation; Appendix)](./training/scripts/lota_ratio.sh) (Please provide the desired sparsity as the second argument when running the script.)
-  * [S2FT (Down)](./training/scripts/s2ft_down.sh)
-  * [S2FT (Down & Output; Appendix)](./training/scripts/s2ft_down_output.sh)
-  * [S2FT (Sparsity ablation (rank = 16); Appendix)](./training/scripts/s2ft_down_16.sh)  
-  * [S2FT (Sparsity ablation (rank = 32); Appendix)](./training/scripts/s2ft_down_32.sh)
-  * [S2FT (Sparsity ablation (rank = 64); Appendix)](./training/scripts/s2ft_down_64.sh)
+| Category | Variant | Script | Notes |
+|----------|---------|--------|-------|
+| SSU | Freezing ratio | [ssu_ratio.sh](./training/scripts/ssu_ratio.sh) | |
+| Baseline freezing ratio | HFT | [hft_ratio.sh](./training/scripts/hft_ratio.sh) | |
+| Baseline freezing ratio | GMT | [gmt_ratio.sh](./training/scripts/gmt_ratio.sh) | |
+| SSU freezing method | Row-wise | [ssu_rw.sh](./training/scripts/ssu_rw.sh) | |
+| SSU freezing method | Element-wise | [ssu_ew.sh](./training/scripts/ssu_ew.sh) | |
+| SSU calibration data | Alpaca | [ssu_alpaca.sh](./training/scripts/ssu_alpaca.sh) | |
+| SSU calibration data size | 128 samples | [ssu_128.sh](./training/scripts/ssu_128.sh) | |
+| SSU importance scoring | SparseGPT | [ssu_sgpt.sh](./training/scripts/ssu_sgpt.sh) | |
+| SSU importance scoring | Fisher | [ssu_fisher.sh](./training/scripts/ssu_fisher.sh) | |
+| Additional baseline | LoTA (90\% sparsity) | [lota.sh](./training/scripts/lota.sh) | |
+| Additional baseline | LoTA (50\% sparsity) | [lota_ratio.sh](./training/scripts/lota_ratio.sh) | Provide 0.5 as the second argument. |
+| Additional baseline | LoTA (sparsity ablation; Appendix) | [lota_ratio.sh](./training/scripts/lota_ratio.sh) | Provide the desired sparsity as the second argument. |
+| Additional baseline | S2FT (Down) | [s2ft_down.sh](./training/scripts/s2ft_down.sh) | |
+| Additional baseline | S2FT (Down & Output; Appendix) | [s2ft_down_output.sh](./training/scripts/s2ft_down_output.sh) | |
+| Additional baseline | S2FT (sparsity ablation, rank = 16; Appendix) | [s2ft_down_16.sh](./training/scripts/s2ft_down_16.sh) | |
+| Additional baseline | S2FT (sparsity ablation, rank = 32; Appendix) | [s2ft_down_32.sh](./training/scripts/s2ft_down_32.sh) | |
+| Additional baseline | S2FT (sparsity ablation, rank = 64; Appendix) | [s2ft_down_64.sh](./training/scripts/s2ft_down_64.sh) | |
 
 
 #### OLMo-2-13B-1124-Instruct
-* [FFT](./training/scripts/fft_13b.sh)
-* [AdaLoRA](./training/scripts/adalora_13b.sh)
-* [HFT](./training/scripts/hft_13b.sh)
-* [GMT](./training/scripts/gmt_13b.sh)
-* [SSU-Rand](./training/scripts/random_13b.sh)
-* [SSU-Mag](./training/scripts/magnitude_13b.sh)
-* [SSU-Wanda](./training/scripts/ssu_13b.sh)
+| Strategy | Script |
+|----------|--------|
+| FFT | [fft_13b.sh](./training/scripts/fft_13b.sh) |
+| AdaLoRA | [adalora_13b.sh](./training/scripts/adalora_13b.sh) |
+| HFT | [hft_13b.sh](./training/scripts/hft_13b.sh) |
+| GMT | [gmt_13b.sh](./training/scripts/gmt_13b.sh) |
+| SSU-Rand | [random_13b.sh](./training/scripts/random_13b.sh) |
+| SSU-Mag | [magnitude_13b.sh](./training/scripts/magnitude_13b.sh) |
+| SSU-Wanda | [ssu_13b.sh](./training/scripts/ssu_13b.sh) |
+
 
 ### On converting S2FT permuted checkpoints
 To convert S2FT permuted checkpoints back to the original weight format for evaluation, you can use the [`convert_s2_to_linear.py`](./training/src/convert_s2_to_linear.py) script. Here is an example of how to run the script:
@@ -639,19 +639,27 @@ The adapted model checkpoints are available at the following Hugging Face Hub re
 | S2FT (Down, rank=16) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-s2ft_d_16) |
 | S2FT (Down, rank=32) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-s2ft_d_32) |
 | S2FT (Down, rank=64) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-s2ft_d_64) |
+| Olmo 3 SSU-Wanda | 7B | [ig](https://huggingface.co/ssu-project/Olmo-3-7B-Instruct-ig-ssu) |
+| Olmo 3 HFT | 7B | [ig](https://huggingface.co/ssu-project/Olmo-3-7B-Instruct-ig-hft) |
+| Olmo 3 GMT | 7B | [ig](https://huggingface.co/ssu-project/Olmo-3-7B-Instruct-ig-gmt) |
+| Olmo 3 FFT | 7B | [ig](https://huggingface.co/ssu-project/Olmo-3-7B-Instruct-ig-fft) |
+| Olmo 3 S2FT (Down) | 7B | [ig](https://huggingface.co/ssu-project/Olmo-3-7B-Instruct-ig-s2ft_d) |
+| Olmo 3 LoTA (90% Sparsity) | 7B | [ig](https://huggingface.co/ssu-project/Olmo-3-7B-Instruct-ig-lota) |
 
 
 ## Citation
 If you find our work useful in your research, please consider citing the following paper:
 ```
-@misc{yamaguchi2025mitigatingcatastrophicforgettingtarget,
-      title={Mitigating Catastrophic Forgetting in Target Language Adaptation of LLMs via Source-Shielded Updates}, 
+@article{yamaguchi2025mitigatingcatastrophicforgettingtarget,
+      title={Mitigating Catastrophic Forgetting in Target Language Adaptation of {LLMs} via Source-Shielded Updates}, 
       author={Atsuki Yamaguchi and Terufumi Morishita and Aline Villavicencio and Nikolaos Aletras},
       year={2025},
       eprint={2512.04844},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2512.04844}, 
+      url={https://arxiv.org/abs/2512.04844},
+      journal={arXiv preprint},
+      volume={arXiv:2512.04844}
 }
 ```
 
