@@ -640,6 +640,13 @@ The adapted model checkpoints are available at the following Hugging Face Hub re
 | S2FT (Down, rank=16) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-s2ft_d_16) |
 | S2FT (Down, rank=32) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-s2ft_d_32) |
 | S2FT (Down, rank=64) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-s2ft_d_64) |
+| FFT (20M tokens) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-fft-20MT) |
+| AdaLoRA (20M tokens) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-adalora-20MT) |
+| HFT (20M tokens) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-hft-20MT) |
+| GMT (20M tokens) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-gmt-20MT) |
+| SSU-Mag (20M tokens) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-magnitude-20MT) |
+| SSU-Rand (20M tokens) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-random-20MT) |
+| SSU-Wanda (20M tokens) | 7B | [ig](https://huggingface.co/ssu-project/OLMo-2-1124-7B-Instruct-ig-ssu-20MT) |
 | Olmo 3 SSU-Wanda | 7B | [ig](https://huggingface.co/ssu-project/Olmo-3-7B-Instruct-ig-ssu) |
 | Olmo 3 HFT | 7B | [ig](https://huggingface.co/ssu-project/Olmo-3-7B-Instruct-ig-hft) |
 | Olmo 3 GMT | 7B | [ig](https://huggingface.co/ssu-project/Olmo-3-7B-Instruct-ig-gmt) |
