@@ -658,16 +658,25 @@ The adapted model checkpoints are available at the following Hugging Face Hub re
 ## Citation
 If you find our work useful in your research, please consider citing the following paper:
 ```
-@article{yamaguchi2025mitigatingcatastrophicforgettingtarget,
-      title={Mitigating Catastrophic Forgetting in Target Language Adaptation of {LLMs} via Source-Shielded Updates}, 
-      author={Atsuki Yamaguchi and Terufumi Morishita and Aline Villavicencio and Nikolaos Aletras},
-      year={2025},
-      eprint={2512.04844},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2512.04844},
-      journal={arXiv preprint},
-      volume={arXiv:2512.04844}
+@inproceedings{yamaguchi-etal-2026-mitigating,
+    title = "Mitigating Catastrophic Forgetting in Target Language Adaptation of {LLM}s via Source-Shielded Updates",
+    author = "Yamaguchi, Atsuki  and
+      Morishita, Terufumi  and
+      Villavicencio, Aline  and
+      Aletras, Nikolaos",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-long.865/",
+    doi = "10.18653/v1/2026.acl-long.865",
+    pages = "18949--18975",
+    ISBN = "979-8-89176-390-6",
 }
 ```
 
